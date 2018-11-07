@@ -1,0 +1,95 @@
+## Example Prompt
+
+Player 1: What does 5 plus 3 equal?
+> 9
+Player 1: Seriously? No!
+P1: 2/3 vs P2: 3/3
+----New Turn----
+Player 2: What does 2 plus 6 equal?
+>8
+Player 2: YES! You are correct.
+P1 2/3 vs P2: 3/3
+----New Turn----
+... some time later ...
+Player 1 wins with score of 1/3
+----Game Over----
+Good Bye!
+
+## Task 1
+
+Class players > construct players
+- Only 2 Players
+- current player
+- Players need lives (3)
+
+
+Class question > construct question
+- generate numbers under 20 to sum
+
+
+Class rounds > construct rounds
+- acess question
+- answer to question
+- max 3 rounds
+- log winner
+
+## Task 2
+
+- Players will need to be able to store the state of how many 
+rounds they have won.
+- Player 1 and Player 2 will have their rounds compared for a winner
+- The game ends afer 3 rounds
+- questions must generate two random numbers
+- questions must be able to tell if the input is the correct answer
+- rounds are won when a question is correct
+
+
+## Personal Review
+
+- Initiate Game
+- 2 players created(or avaliable)
+- Player 1 prompts question
+- Player 2 answers (current_player)
+- Player 1 responds if answer was correct or not
+
+- If answer is incorrect current_player looses life
+
+- New turn initiated
+- Player 2 promts question
+- Player 1 answers (current_player)
+- Player 2 responds if answer is correct or not
+
+- If answer is incorrect current_player looses life
+
+- Repeat until one player has 0 lives
+
+- Player with remaining lives wins
+- Print winner and score
+
+-end game and terminate process.
+
+## Classes
+
+Class Player
+name
+lives
++-lives
+
+Class Question
+2 random numbers under 20
+creates question
+
+
+Class Round
+grabs questions
+have answer
+compare answer to players
+return if correct or not
+if wrong lose life
+when player lives 0 game ends 
+
+Class game
+current player
+initialize
+has loop for rounds
+game ens at 0 
